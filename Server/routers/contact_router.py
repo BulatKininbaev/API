@@ -10,7 +10,7 @@ import csv
 router = APIRouter()
 templates = Jinja2Templates(directory="templates")
 
-#contact_lst = [ContactInfo(id=6,fio='Петов',phone='89224789344',comment='Друг'),ContactInfo(id=7,fio='Петов6',phone='89224789373',comment='{Хороший Друг')]
+contact_lst = [ContactInfo(id=6,fio='Петров',phone='89224789344',comment='Друг'),ContactInfo(id=7,fio='Петов6',phone='89224789373',comment='{Хороший Друг')]
 
 
 def load_contactlist(path_name: str) -> None:
