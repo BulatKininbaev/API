@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI
 import uvicorn
 from routers.contact_router import router as main_router
 from fastapi.middleware.cors import CORSMiddleware
