@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Телефонный справочник</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <script src="Scripts/MainScript.js"></script>
+</head>
+<body>
+<br/>
+<h1> Реализация ДЗ по работе с телефонным справочником через API</h1>
+<br/>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand">Меню</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="#" onclick="LoadList()">Загрузить из файла</a>
+        <a class="nav-link" href="#" onclick="GetList()"> Обновить </a>
+        <a class="nav-link" href="#" onclick="display('add')">Добавить</a>
+        <a class="nav-link" href="#" onclick="display('find')">Найти</a>
+        <a class="nav-link" href="#" onclick="display('edit')">Изменить</a>
+        <a class="nav-link" href="#" onclick="display('delete')">Удалить</a>
+        <a class="nav-link" href="#" onclick="GetAbout()">О справочнике</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<br/>
+<form id="inputinfo" class="form-hide">
+  <div class="mb-3">
+    <label for="idlist" class="form-label">ID</label>
+    <input type="text" class="form-control" id="idlist">
+  </div>
+  <div class="mb-3">
+    <label for="fiolist" class="form-label">ФИО</label>
+    <input type="text" class="form-control" id="fiolist">
+  </div>
+  <div class="mb-3">
+    <label for="phonelist" class="form-label">Телефон</label>
+    <input type="text" class="form-control" id="phonelist">
+  </div>
+  <div class="mb-3">
+    <label for="commentlist" class="form-label">Примечания</label>
+    <input type="text" class="form-control" id="commentlist">
+  </div>
+  <button type="submit" class="btn btn-primary" onclick="DoSomething()" id="btnmenu">Добавить</button>
+</form>
+<br/>
+<a id="dinamikblock"></a>
+
+</body>
+</html>

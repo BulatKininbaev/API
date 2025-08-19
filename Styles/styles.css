@@ -1,0 +1,10 @@
+
+table {width : 200px }
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.form-hide {
+    display: none;
+}
